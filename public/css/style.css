@@ -1,0 +1,1231 @@
+
+
+@media all and (min-width: 0) {
+    @font-face {
+        font-family: "Open Sans";
+        src: url("../fonts/OpenSans-Regular.ttf");
+        font-weight: normal;
+    }
+    @font-face {
+        font-family: "Open Sans";
+        src: url("../fonts/OpenSans-Bold.ttf");
+        font-weight: bold;
+    }
+    @font-face {
+        font-family: "Open Sans";
+        src: url("../fonts/OpenSans-Italic.ttf");
+        font-weight: normal;
+        font-style: italic;
+    }
+    @font-face {
+        font-family: "Open Sans";
+        src: url("../fonts/OpenSans-BoldItalic.ttf");
+        font-weight: bold;
+        font-style: italic;
+    }
+    @font-face {
+        font-family: "Dancing Script";
+        src: url("../fonts/DancingScript-Regular.ttf");
+        font-weight: normal;
+    }
+    @font-face {
+        font-family: "Dancing Script";
+        src: url("../fonts/DancingScript-Bold.ttf");
+        font-weight: bold;
+    }
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+    }
+    img, video {
+        background: #ccc;
+        display: block;
+        width: 100%;
+    }
+    div {
+        box-sizing: border-box;
+        position: relative;
+    }
+    p {
+        margin: 1rem 0;
+        -webkit-column-break-inside: avoid; /* Chrome, Safari */
+        page-break-inside: avoid;           /* Theoretically FF 20+ */
+        break-inside: avoid-column;         /* IE 11 */
+    }
+    li {
+        -webkit-column-break-inside: avoid; /* Chrome, Safari */
+        page-break-inside: avoid;           /* Theoretically FF 20+ */
+        break-inside: avoid-column;         /* IE 11 */
+    }
+    p:first-child {
+        margin-top: 0;
+    }
+    p:last-child {
+        margin-bottom: 0;
+    }
+    html {
+        font-size: 62.5%;
+    }
+    
+    body {
+        line-height: 1.5;
+        font-size: 1.4rem;
+        font-family: 'Open Sans', sans-serif;
+        color: #222;
+        background: #fff;
+    
+    }	
+    .s h1 {
+        font-weight: normal;
+        font-size: 5rem;
+        line-height: 1.1;
+    }
+    .s .s h1 {
+        font-size: 4rem;
+    }
+    .s .s .s h1 {
+        font-size: 2rem;
+    }
+    .s .s .s .s h1 {
+        font-size: 1.5rem;
+    }
+    a {
+        color : #007585;
+    }
+    a:link,
+    a:active,
+    a:visited {
+        text-decoration: none;
+    }
+    a:hover {
+        color: rgb(128,205,224);
+    }
+    
+    /* section (section, nav, aside, article - AKA html 5 'sectioning content') */
+    .s {
+        position: relative;
+    }
+    /* content of a section */
+    .c {
+        position: relative;
+        margin-bottom: 1rem;
+    }
+    .c:first-child {
+        margin-top: 0;
+    }
+    .c:last-child {
+        margin-bottom: 0;
+    }
+}
+@media all and (min-width: 20em) {
+/* 20 x 1.6 = 320px */
+
+}
+@media all and (min-width: 64em) {
+/* 60 x 1.6 = 1024px */
+    body {
+        font-size: 1.5rem;
+    }
+    .s h1 {
+        font-size: 6rem;
+    }
+    .s .s h1 {
+        font-size: 4rem;
+    }
+    .s .s .s h1 {
+        font-size: 3rem;
+    }
+    .s .s .s .s h1 {
+        font-size: 1.5rem;
+    }
+}
+@media all and (min-width: 110em) {
+/* 110 x 1.6 = 1760px */
+    body {
+        font-size: 1.6rem;
+    }
+}
+
+/******************************************************************************/
+/******************************************************************************/
+
+/* START root */
+@media all and (min-width: 0) {
+    body > div {
+        padding: 6.4rem 0 100rem 0;
+    }
+}
+@media all and (min-width: 20em) {
+/* 20 x 1.6 = 320px */
+
+}
+@media all and (min-width: 30em) {
+/* 30 x 1.6 = 480px */
+
+}
+@media all and (min-width: 48em) {
+/* 48 x 1.6 = 720px */	
+    body > div {
+        padding: 8.4rem 0 100rem 0;
+    }
+}
+@media all and (min-width: 64em) {
+/* 60 x 1.6 = 1024px */
+    body > div {
+        margin: auto;
+        width: 90rem;
+        padding: 8.7rem 0 100rem 0;
+    }
+}
+@media all and (min-width: 80em) {
+/* 80 x 1.6 = 1280px */
+    body > div {
+        width: 110rem;
+    }
+}
+@media all and (min-width: 110em) {
+/* 110 x 1.6 = 1760px */
+    body > div {
+        width: 130rem;
+    }
+}
+/* END root */
+
+/******************************************************************************/
+/******************************************************************************/
+
+/* START section.home */
+@media all and (min-width: 0) {
+    .s.home > div:nth-child(1) {
+        /* top bar */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 100;
+        border-bottom: .1rem #ccc solid;
+    }
+    .s.home > div:nth-child(2) {
+        padding: 0;
+    }
+    header.c.home h1 {
+        font-family: 'Dancing Script';
+        text-transform: lowercase;
+        text-align: center;
+        font-size: 4rem;
+        line-height: 1.2;
+        width: 90%;
+        margin: 2.5rem auto 2.5rem auto;
+    }
+    header.c.home h1 span {
+        margin-right: -0.25em;
+    }
+    .c.home  {
+        margin: 0;
+    }
+    .c.home.image img {
+        width: 100%;
+        height: auto;
+    }
+    .c.home.text {
+        background: #000;
+        color: #fff;
+        padding: 1rem;
+    }
+    .c.home.text p span.company-name{
+        color: rgb(69,187,204);
+    }
+    .s.home > div:nth-child(3) {
+        background: rgb(213,234,239);
+    }
+    .s.home > div:nth-child(5) {
+        background: rgb(213,234,239);
+    }
+
+
+}
+@media all and (min-width: 20em) {
+/* 20 x 1.6 = 320px */
+    header.c.home h1 {
+        width: 85%;
+    }
+    .c.home.text {
+        font-size: 1.7rem;
+    }
+
+}
+@media all and (min-width: 30em) {
+/* 30 x 1.6 = 480px */
+    header.c.home h1 {
+        font-size: 6rem;
+    }
+    .c.home.text {
+        padding: 2rem;
+    }
+}
+@media all and (min-width: 48em) {
+/* 48 x 1.6 = 720px */	
+    .s.home > div:nth-child(1) {
+        /* top bar */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 100;
+        border-bottom: none;
+    }
+    header.c.home {
+        position: absolute;
+        top: 6rem;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+    }
+    header.c.home h1 {
+        margin: 0 auto;
+    }
+    .c.home.text {
+        padding: 2rem;
+    }
+}
+@media all and (min-width: 64em) {
+/* 60 x 1.6 = 1024px */
+
+    header.c.home {
+        position: absolute;
+        top: 1.5rem;
+        left: 0;
+        z-index: 2;
+        width: 100%;
+    }
+    header.c.home h1 {
+        font-size: 7rem;
+    }
+    .c.home.image {
+        overflow: hidden;
+    }
+    .c.home.image img {
+        margin-top: -6rem;
+    }
+    .c.home.text {
+        font-size: 2rem;
+    }
+}
+@media all and (min-width: 80em) {
+    /* 80 x 1.6 = 1280px */
+    header.c.home {
+        position: absolute;
+        top: 3.8rem;
+    }
+    header.c.home h1 {
+        font-size: 8rem;
+    }
+    .c.home.image img {
+        margin-top: -6rem;
+    }
+    .c.home.text {
+        padding: 3rem;
+    }
+    
+}
+@media all and (min-width: 110em) {
+/* 110 x 1.6 = 1760px */
+    header.c.home {
+        position: absolute;
+        top: 1.5rem;
+    }
+    header.c.home h1 {
+        font-size: 9.5rem;
+    }
+    .c.home.image img {
+        margin-top: -11rem;
+    }
+    .c.home.text {
+        padding: 4rem;
+        font-size: 3rem;
+        margin-top: -3rem;
+    }
+}
+/* END section.home */
+
+/******************************************************************************/
+/******************************************************************************/
+
+/* START nav.site-nav */
+@media all and (min-width: 0) {
+    .c.site-nav  {
+        margin: 0;
+    }
+    .c.site-nav a {
+        color : #000;
+    }
+    .c.site-nav a:hover {
+        color: #007585;
+    }
+    header.c.site-nav {
+        position: absolute;
+        left: -1000rem;
+        top: auto; 
+    }
+    .c.site-nav.links {
+        background: #fff;
+    }
+    .c.site-nav.links ul {
+        overflow: auto;
+        padding: 1rem;
+        background-image: url(../img/four-freedom-films-logo.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 5rem auto;
+    }
+    .c.site-nav.links li {
+        margin: 0;
+        display: block;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 1.3rem;
+        width: 45%;
+    }
+    .c.site-nav.links li:nth-child(1) {
+        position: absolute;
+        top: 0rem;
+        left: 50%;
+        margin-left: -3rem;      
+        height: 6rem;
+        width: 6rem;
+    }
+    .c.site-nav.links li:nth-child(1) a {
+        height: 6rem;
+        width: 6rem;
+    }
+    .c.site-nav.links li:nth-child(1) a span {
+        position: absolute;
+        left: -1000rem;
+        top: auto; 
+    }
+
+    .c.site-nav.links li:nth-child(2),
+    .c.site-nav.links li:nth-child(3) {
+        margin-bottom: .5rem;
+    }
+    .c.site-nav.links li:nth-child(2),
+    .c.site-nav.links li:nth-child(4) {
+        float: left;
+        text-align: left;
+    }
+    .c.site-nav.links li:nth-child(3),
+    .c.site-nav.links li:nth-child(5) {
+        float: right;
+        text-align: right;
+    }
+    .c.site-nav.links a {
+        display: block;
+    }
+}
+@media all and (min-width: 20em) {
+/* 20 x 1.6 = 320px */
+
+
+}
+@media all and (min-width: 30em) {
+/* 30 x 1.6 = 480px */
+    .c.site-nav.links a {
+        font-size: 1.5rem;
+    }
+}
+@media all and (min-width: 48em) {
+/* 48 x 1.6 = 720px */
+    .c.site-nav.links ul {
+        padding: 3rem 1rem;
+        background-size: 6rem auto;
+    }
+    .c.site-nav.links li {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 1.3rem;
+        width: 20%;
+    }
+    .c.site-nav.links li:nth-child(1) {
+        margin-left: -4rem;
+        height: 8rem;
+        width: 8rem;
+    }
+    .c.site-nav.links li:nth-child(1) a {
+        height: 8rem;
+        width: 8rem;
+    }
+    .c.site-nav.links li:nth-child(2),
+    .c.site-nav.links li:nth-child(3) {
+        margin: 0;
+
+    }
+    .c.site-nav.links li:nth-child(2),
+    .c.site-nav.links li:nth-child(4) {
+        float: left;
+        text-align: center;
+    }
+    .c.site-nav.links li:nth-child(3),
+    .c.site-nav.links li:nth-child(5) {
+        float: left;
+        text-align: center;
+    }
+    .c.site-nav.links li:nth-child(4) {
+        margin-left: 20%;
+    }
+    .c.site-nav.links a {
+        display: block;
+        font-size: 1.7rem;
+    }
+
+}
+@media all and (min-width: 64em) {
+/* 60 x 1.6 = 1024px */
+    nav.s.site-nav {
+        width: 90rem;
+        margin: auto;
+    }
+}
+@media all and (min-width: 80em) {
+/* 80 x 1.6 = 1280px */
+    nav.s.site-nav {
+        width: 110rem;
+    }
+    .c.site-nav.links a {
+        font-size: 2rem;
+    }
+}
+@media all and (min-width: 110em) {
+/* 110 x 1.6 = 1760px */
+    nav.s.site-nav {
+        width: 130rem;
+    }
+
+}
+
+/* END nav.site-nav */
+
+/******************************************************************************/
+/******************************************************************************/
+
+/* START section.what-we-do */
+@media all and (min-width: 0) {
+    .c.what-we-do {
+        margin: 0;
+    }
+    header.c.what-we-do {
+        height: 20rem;
+        background: url(../img/four-freedom-films-what-we-do.jpg) no-repeat;
+        background-size: 120% auto;
+        background-position: center;
+    }
+    header.c.what-we-do h1 {
+        position: absolute;
+        bottom: 1rem;
+        left: 1rem;
+        color: #fff;
+        z-index: 1;
+        text-shadow: 1px 1px 2px #666;
+        margin: 0;
+    }
+    .c.what-we-do.text {
+        padding: 1rem;
+        font-weight: bold;
+    }
+    .c.what-we-do.info {
+        font-size: 1.2rem;
+        padding: 1rem;
+        background: #fff;
+        color: #000;
+    }
+    .c.what-we-do.info ul {
+        list-style-type: disc;
+        margin: 0 1rem;
+    }
+    .c.what-we-do.info li {
+        margin: .5em 0 .5em 0.7em;
+        padding-left: .3em;
+    }
+    .c.what-we-do.info li:first-child {
+        margin-top: 0;
+    }
+    .c.what-we-do.info li:last-child{
+        margin-bottom: 0;
+    }
+}
+@media all and (min-width: 20em) {
+/* 20 x 1.6 = 320px */
+
+}
+@media all and (min-width: 30em) {
+/* 30 x 1.6 = 480px */
+    header.c.what-we-do {
+        height: 30rem;
+        background-position: center;
+        background-size: 120% auto;
+    }
+    header.c.what-we-do h1 {
+        position: absolute;
+        bottom: 2rem;
+        left: 2rem;
+    }
+    .c.what-we-do.text {
+        columns: 2;
+        padding: 2rem;
+    }
+    .c.what-we-do.info {
+        padding: 2rem;
+    }
+    .c.what-we-do.info ul {
+        columns: 2;
+        margin: 0;
+    }
+}
+@media all and (min-width: 48em) {
+/* 48 x 1.6 = 720px */
+    header.c.what-we-do {
+        height: 35rem;
+        background-position: center;
+        background-size: 100% auto;
+    }
+    .c.what-we-do.text {
+        columns: 2;
+    }
+}
+@media all and (min-width: 64em) {
+/* 60 x 1.6 = 1024px */
+    .s.what-we-do {
+        overflow: auto;
+    }
+    header.c.what-we-do {
+        font-size: 1.3rem;
+        height: 40rem;
+        background-position: center -7rem;
+        background-size: 100% auto;
+    }
+    header.c.what-we-do h1 {
+        font-size: 5rem;
+    }
+    .c.what-we-do:nth-last-child(-n+2){
+        margin-bottom: 0;
+    }
+
+
+}
+@media all and (min-width: 80em) {
+    /* 80 x 1.6 = 1280px */
+    header.c.what-we-do {
+        height: 50rem;
+        background-position: center -5rem;
+        background-size: 100% auto;
+    }
+    header.c.what-we-do h1 {
+        font-size: 6rem;
+    }
+    .c.what-we-do.c.what-we-do.info {
+        font-size: 1.5rem;
+    }
+    .c.what-we-do.image {
+        padding-left: 3rem;
+    }
+}
+@media all and (min-width: 110em) {
+/* 110 x 1.6 = 1760px */
+    header.c.what-we-do {
+        height: 60rem;
+        background-position: center -5rem;
+        background-size: 100% auto;
+    }
+    header.c.what-we-do h1 {
+        font-size: 7rem;
+        bottom: 4rem;
+        left: 4rem;
+    }
+    .c.what-we-do.text {
+        font-size: 2rem;
+        padding: 4rem;
+    }
+    .c.what-we-do.info {
+        font-size: 1.6rem;
+        padding: 4rem;
+    }
+    .c.what-we-do.info li {
+        margin: 1em 0 1em 0.7em;
+        padding-left: .3em;
+    }
+    .c.what-we-do.image {
+        padding-left: 6rem;
+    }
+
+}
+
+/* END section.what-we-do */
+
+/******************************************************************************/
+/******************************************************************************/
+
+/* START section.productions */
+@media all and (min-width: 0) { 
+    .c.productions {
+        margin: 0;
+    }
+    header.c.productions {
+        height: 20rem;
+        background: url(../img/four-freedom-films-productions.jpg) no-repeat;
+        background-size: 120% auto;
+        background-position: center;
+    }
+    header.c.productions h1 {
+        position: absolute;
+        bottom: 1rem;
+        left: 1rem;
+        color: #fff;
+        z-index: 1;
+        text-shadow: 1px 1px 2px #666;
+        margin: 0;
+    }
+    .c.productions.films {
+        padding: 1rem;
+    }
+    .c.productions.films li {
+        margin-top: 1rem;
+    }
+    .c.productions.films li:first-child {
+        margin-top: 0;
+    }
+}
+@media all and (min-width: 20em) {
+/* 20 x 1.6 = 320px */
+
+}
+@media all and (min-width: 30em) {
+/* 30 x 1.6 = 480px */
+    header.c.productions {
+        height: 30rem;
+        background-position: center -2rem;
+        background-size: 120% auto;
+    }
+    header.c.productions h1 {
+        position: absolute; 
+        bottom: 2rem;
+        left: 2rem;
+    }
+    .c.productions.films {
+        padding: 2rem;
+    }
+    .c.productions.films li {
+        margin-top: 2rem;
+    }
+}
+@media all and (min-width: 48em) {
+/* 48 x 1.6 = 720px */	
+    header.c.productions {
+        height: 35rem;
+        background-position: center -6rem;
+        background-size: 100% auto;
+    }
+}
+@media all and (min-width: 64em) {
+/* 60 x 1.6 = 1024px */
+    header.c.productions {
+        height: 40rem;
+        background-position: center -7rem;
+        background-size: 100% auto;
+    }
+    header.c.productions h1{
+        font-size: 5rem;
+    }
+    .s.productions {
+        background: #eee;
+    }
+    .c.productions.films li:nth-child(odd) .c.film.text {
+        float: right;
+        width: 31%;
+        padding-left: 2rem;
+    }
+    .c.productions.films li:nth-child(odd)  .c.film.video {
+        float: right;
+        width: 69%;
+    }
+    .c.productions.films li:nth-child(even) .c.film.text {
+        float: left;
+        width: 31%;
+    }
+    .c.productions.films li:nth-child(even) .c.film.video {
+        float: left;
+        width: 69%;
+        padding-left: 2rem;
+    }
+
+
+}
+@media all and (min-width: 80em) {
+    /* 80 x 1.6 = 1280px */
+    header.c.productions {
+        height: 50rem;
+        background-position: center -8rem;
+        background-size: 100% auto;
+    }
+    header.c.productions h1{
+        font-size: 6rem;
+    }
+    .c.productions.films li:nth-child(odd) .c.film.text {
+        padding-left: 3rem;
+    }
+    .c.productions.films li:nth-child(odd) .c.film.video {
+        float: right;
+    }
+    .c.productions.films li:nth-child(even) .c.film.text {
+        float: left;
+    }
+    .c.productions.films li:nth-child(even) .c.film.video {
+        float: left;
+        padding-left: 3rem;
+    }
+}
+@media all and (min-width: 110em) {
+/* 110 x 1.6 = 1760px */
+    header.c.productions {
+        height: 60rem;
+        background-position: center -8rem;
+        background-size: 100% auto;
+    }
+    header.c.productions h1{
+        font-size: 7rem;
+        bottom: 4rem;
+        left: 4rem;
+    }
+    .c.productions.films {
+        padding: 4rem;
+    }
+    .c.productions.films li:nth-child(odd) .c.film.text {
+        float: right;
+        padding-left: 3rem;
+    }
+    .c.productions.films li:nth-child(odd)  .c.film.video {
+        float: right;
+    }
+    .c.productions.films li:nth-child(even) .c.film.text {
+        float: left;
+    }
+    .c.productions.films li:nth-child(even) .c.film.video {
+        float: left;
+        padding-left: 3rem;
+    }
+}
+/* END section.productions */
+
+/******************************************************************************/
+/******************************************************************************/
+
+/* START section.film */
+@media all and (min-width: 0) {
+    .s.film {
+        padding: 1rem 0;
+    }
+    header.c.film h1 {
+        border-bottom: .1rem solid #999;
+        padding: 0 0 .33em 0;
+        margin-top: 0;
+    }
+    .c.film.video > div { 
+        position: relative; 
+        padding-bottom: 56.25%; 
+        height: 0; 
+        overflow: hidden; 
+        max-width: 100%; 
+        height: auto; 
+    } 
+    .c.film.video iframe, 
+    .c.film.video object, 
+    .c.film.video embed { 
+        position: absolute; 
+        top: 0; 
+        left: 0; 
+        width: 100%; 
+        height: 100%;
+    }
+}
+@media all and (min-width: 20em) {
+/* 20 x 1.6 = 320px */
+
+}
+@media all and (min-width: 30em) {
+/* 30 x 1.6 = 480px */
+    .s.film {
+        overflow: auto;
+    }
+    .c.film.text {
+        columns: 1;
+    }
+
+}
+@media all and (min-width: 48em) {
+/* 48 x 1.6 = 720px */	
+
+}
+@media all and (min-width: 64em) {
+/* 60 x 1.6 = 1024px */
+
+}
+@media all and (min-width: 80em) {
+    /* 80 x 1.6 = 1280px */
+    
+}
+@media all and (min-width: 110em) {
+/* 110 x 1.6 = 1760px */
+
+}
+/* END section.film */
+
+/******************************************************************************/
+/******************************************************************************/
+
+/* START section.who-we-are */
+@media all and (min-width: 0) {
+    .c.who-we-are {
+        margin: 0;
+    }
+    header.c.who-we-are {
+        height: 20rem;
+        background: url(../img/four-freedom-films-who-we-are.jpg) no-repeat;
+        background-size: 120% auto;
+        background-position: center;
+    }
+    header.c.who-we-are h1 {
+        position: absolute;
+        bottom: 1rem;
+        left: 1rem;
+        color: #fff;
+        z-index: 1;
+        text-shadow: 1px 1px 2px #666;
+        margin: 0;
+    }
+    .c.who-we-are.people {
+        padding: 1rem;
+        overflow: auto;
+    }
+    .c.who-we-are.people li {
+        margin-top: 1rem;
+    }
+    .c.who-we-are.people li:first-child {
+        margin-top: 0;
+    }
+
+    
+}
+@media all and (min-width: 20em) {
+/* 20 x 1.6 = 320px */
+
+}
+@media all and (min-width: 30em) {
+/* 30 x 1.6 = 480px */
+    header.c.who-we-are {
+        height: 30rem;
+        background-position: center -2rem;
+        background-size: 120% auto;
+    }
+    header.c.who-we-are h1 {
+        position: absolute;
+        bottom: 2rem;
+        left: 2rem;
+    }
+    .c.who-we-are.people {
+        padding: 2rem;
+        overflow: auto;
+    }
+    .c.who-we-are.people li {
+        overflow: auto;
+        margin-top: 2rem;
+    }
+}
+@media all and (min-width: 48em) {
+/* 48 x 1.6 = 720px */	
+    header.c.who-we-are {
+        height: 35rem;
+        background-position: center -8rem;
+        background-size: 100% auto;
+    }
+    .c.who-we-are.people ul {
+        overflow: auto;
+    }
+    .c.who-we-are.people li {
+        overflow: auto;
+    }
+
+
+}
+@media all and (min-width: 64em) {
+/* 60 x 1.6 = 1024px */
+    header.c.who-we-are {
+        height: 40rem;
+        background-position: center -7rem;
+        background-size: 100% auto;
+    }
+    header.c.who-we-are h1 {
+        font-size: 5rem;
+        margin: 0;
+    }
+    .c.who-we-are.people li {
+        float: left;
+        overflow: auto;
+        width: 50%;
+    }
+    .c.who-we-are.people li:nth-child(odd){
+        clear: left;
+    }
+    .c.who-we-are.people li:nth-child(2) {
+        margin-top: 0;
+    }
+    .c.who-we-are.people li:nth-child(odd) .s.person {
+        padding-right: 1rem;
+    }
+    .c.who-we-are.people li:nth-child(even) .s.person {
+        padding-left: 1rem;
+    }
+}
+@media all and (min-width: 80em) {
+    /* 80 x 1.6 = 1280px */
+    header.c.who-we-are {
+        height: 50rem;
+        background-position: center -8rem;
+        background-size: 100% auto;
+    }
+    header.c.who-we-are h1{
+        font-size: 6rem;
+        bottom: 4rem;
+        left: 4rem;
+    }
+}
+@media all and (min-width: 110em) {
+/* 110 x 1.6 = 1760px */
+    header.c.who-we-are {
+        height: 60rem;
+        background-position: center -8rem;
+        background-size: 100% auto;
+    }
+    header.c.who-we-are h1{
+        font-size: 7rem;
+    }
+    .c.who-we-are.people {
+        padding: 4rem;
+    }
+}
+/* END section.who-we-are */
+
+/******************************************************************************/
+/******************************************************************************/
+
+/* START section.person */
+@media all and (min-width: 0) {
+    .s.person {
+        padding-top: 1rem;
+    }
+
+    .c.person {
+        margin-bottom: 1rem;
+    }
+    header.c.person {
+        
+    }
+    header.c.person h1 {
+        border-bottom: .1rem solid #999;
+        padding: 0 0 .33em 0;
+    }
+    header.c.person p {
+        margin-top: -0.8em;
+        font-style: italic;
+    }
+    header.c.person h1 {
+        margin-top: 0;
+    }
+
+}
+@media all and (min-width: 20em) {
+/* 20 x 1.6 = 320px */
+
+}
+@media all and (min-width: 30em) {
+/* 30 x 1.6 = 480px */
+
+    .s.person .c {
+        margin-top: 0;
+    }
+    .c.person.text {
+        float: left;
+        width: 60%;
+    }
+    .c.person.image {
+        float: left;
+        width: 40%;
+        padding-left: 1rem;
+    }
+}
+@media all and (min-width: 48em) {
+/* 48 x 1.6 = 720px */	
+    .s.person {
+        overflow: auto;
+    }
+    .c.person.text {
+        float: left;
+        width: 60%;
+    }
+    .c.person.image {
+        float: left;
+        width: 40%;
+        padding-left: 2rem;
+    }
+}
+@media all and (min-width: 64em) {
+/* 60 x 1.6 = 1024px */
+    header.c.person p {
+        margin-top: -1em;
+    }
+}
+@media all and (min-width: 80em) {
+    /* 80 x 1.6 = 1280px */
+    .c.person.text {
+        float: left;
+        width: 60%;
+    }
+    .c.person.image {
+        float: left;
+        width: 40%;
+        padding-left: 2rem;
+    }
+}
+@media all and (min-width: 110em) {
+/* 110 x 1.6 = 1760px */
+    .c.person.text {
+        float: left;
+        width: 65%;
+    }
+    .c.person.image {
+        float: left;
+        width: 35%;
+        padding-left: 2rem;
+    }
+}
+/* END section.person */
+
+/******************************************************************************/
+/******************************************************************************/
+
+/* START section.contact-us */
+@media all and (min-width: 0) {
+    .c.contact-us {
+        margin: 0;
+    }
+    header.c.contact-us{
+        height: 20rem;
+        background: url(../img/four-freedom-films-contact-us.jpg) no-repeat;
+        background-size: 120% auto;
+        background-position: center;
+    }
+    header.c.contact-us h1 {
+        position: absolute;
+        bottom: 1rem;
+        left: 1rem;
+        color: #fff;
+        z-index: 1;
+        text-shadow: 1px 1px 2px #666;
+        margin: 0;
+    }
+    .c.contact-us.text {
+        padding: 1rem;
+        padding-bottom: .5rem;
+    }
+    .c.contact-us.info {
+        padding: 1rem;
+        padding-top: 0;
+    }
+    .c.contact-us.newsletter {
+        padding: 1rem;
+        padding-top: 0;
+    }
+
+}
+@media all and (min-width: 20em) {
+/* 20 x 1.6 = 320px */
+
+}
+@media all and (min-width: 30em) {
+/* 30 x 1.6 = 480px */
+    header.c.contact-us {
+        height: 30rem;
+        background-position: center -3rem;
+        background-size: 100% auto;
+    }
+    header.c.contact-us h1 {
+        position: absolute;
+        bottom: 2rem;
+        left: 2rem;
+    }
+    .c.contact-us.text {
+        padding: 2rem;
+        padding-bottom: 1rem;
+    }
+    .c.contact-us.info {
+        padding: 2rem;
+    }
+    .c.contact-us.newsletter {
+        padding: 2rem;
+    }
+}
+@media all and (min-width: 48em) {
+/* 48 x 1.6 = 720px */	
+    header.c.contact-us {
+        height: 35rem;
+        background-position: center;
+        background-size: 100% auto;
+    }
+}
+@media all and (min-width: 64em) {
+/* 60 x 1.6 = 1024px */
+    .s.contact-us {
+        background: #eee;
+    }
+    header.c.contact-us {
+        height: 40rem;
+        background-position: center -12rem;
+        background-size: 100% auto;
+    }
+    header.c.contact-us h1{
+        font-size: 5rem;
+    }
+}
+@media all and (min-width: 80em) {
+    /* 80 x 1.6 = 1280px */
+    header.c.contact-us {
+        height: 50rem;
+        background-position: center -12rem;
+        background-size: 100% auto;
+    }
+    header.c.contact-us h1{
+        font-size: 6rem;
+    }
+}
+@media all and (min-width: 110em) {
+/* 110 x 1.6 = 1760px */
+    header.c.contact-us {
+        height: 60rem;
+        background-position: center -12rem;
+        background-size: 100% auto;
+    }
+    header.c.contact-us h1{
+        font-size: 7rem;
+        left: 4rem;
+        bottom: 4rem;
+    }
+    .c.contact-us.text {
+        padding: 4rem;
+        padding-bottom: 2rem;
+    }
+    .c.contact-us.info {
+        padding: 4rem;
+    }
+    .c.contact-us.newsletter {
+        padding: 4rem;
+  }
+}
+/* END section.contact-us */
